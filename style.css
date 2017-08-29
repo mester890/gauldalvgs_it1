@@ -1,0 +1,70 @@
+
+/*
+Jeg kommenterer ut koden, slik at jeg kan ta den ibruk senere.
+Denne koden er nå inaktiv.
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*/
+
+
+/*
+  Jeg kaller på klassen "minDiv" slik at kun dette
+  elementet blir berørt av stylingen jeg setter.
+*/
+.minDiv {
+  width: 70%;
+  height: auto;
+  margin: 0 auto
+}
+
+/*
+  Jeg kaller på taggen table, og setter border-collapse
+  slik at tabbelens rammer slås sammen til en strek.
+  Se td,th for neste steg
+*/
+table {
+  border-collapse: collapse;
+  width: 100%
+}
+
+/*
+  Her benytter vi en pseudo-kommando, slik at kun
+  partalls-radene blir berørt av stylingen.
+*/
+tr:nth-child(even) {
+  background-color: rgba(0, 0, 255, 0.5);
+}
+
+/*
+  Jeg skiller to tagger med komma for å gi disse
+  den samme stylingen. Her setter vi rammen rundt
+  hver enkelt celle, slik at de markeres.
+*/
+td, th {
+  border: 1px solid black;
+  /*
+  padding kan også skrives slik:
+
+  padding: 10px 20px 10px 20px
+  som betyr:
+  padding: topp, høyre, bunn, venstre
+
+  eller
+
+  padding: 10px 20px
+  som betyr:
+  padding: topp og bunn, venstre og høyre
+  */
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  /*
+    Denne koden sentrerer teksten inne i
+    hver enkelt celle.
+  */
+  text-align: center;
+}
