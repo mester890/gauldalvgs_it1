@@ -1,14 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Muli');
 
-/*
-Jeg kommenterer ut koden, slik at jeg kan ta den ibruk senere.
-Denne koden er nå inaktiv.
 * {
-  margin: 0;
-  padding: 0;
+  font-family: 'Indie Flower', sans-serif;
 }
-
-*/
-
 
 /*
   Jeg kaller på klassen "minDiv" slik at kun dette
@@ -27,7 +22,8 @@ Denne koden er nå inaktiv.
 */
 table {
   border-collapse: collapse;
-  width: 100%
+  width: 100%;
+
 }
 
 /*

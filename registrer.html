@@ -14,7 +14,6 @@
   </head>
   <body>
     <div class="minDiv">
-
     <ul>
       <li><a href="index.html">Hjem <i class="fa fa-home fa-sm"></i></a></li>
       <li><a href="om-meg.html">Om meg <i class="fa fa-user fa-sm"></i></a></li>
@@ -22,33 +21,21 @@
       <li><a href="registrer.html">Registrer deg <i class="fa fa-check fa-sm"></i></a></li>
     </ul>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h1>Registrer deg</h1>
-    <form class=""method="post">
-      <input type="text" name="" id="navneboks" value="Navn">
-      <button type="button" name="button"  onclick="registrer();" >Registrer</button>
+    <form method="post">
+      <input type="text" id="navneboks" />
+      <button type="button" name="button" onclick="registrer();">Registrer</button>
     </form>
 
     <script type="text/javascript">
       function registrer() {
-        var input = document.getElementById("navneboks").value;
-        alert('Hei ' + input + "\nHar du det bra idag?");
+        var navn = document.getElementById('navneboks').value;
+        if(navn == '') {
+          alert('Du har ikke skrevet inn noe i feltet.');
+        } else {
+          alert(navn);
+        }
       }
     </script>
-
    </div>
   </body>
 </html>
